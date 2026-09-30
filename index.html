@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <style>
+         a {
+         text-decoration: none;
+         border-bottom: 1px dotted #1d4ed8; /* blue dotted underline */
+         color: #00008B;
+         transition: border-bottom-color 0.3s ease, color 0.3s ease;
+         }
+         a:hover {
+         border-bottom-color: #f59e0b; /* orange on hover */
+         color: #f59e0b;
+         }
+         h1 {
+         color: #00008B;
+         }
+         /* Override for video link */
+         a.no-dotted {
+         border-bottom: none; /* remove dotted underline */
+         }
+      </style>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>RESI Reading Group on AI Safety</title>
+      <meta name="description" content="The RESI Reading Group on AI Safety">
+      <meta name="keywords" content="AI Safety, AI, Artificial Intelligence, ML, Machine Learning, RESI, Seminar, Talk, Reading Group, Slides">
+      <meta name="author" content="RESI">
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <script>
+         function toggleAbstract(id) {
+           const elem = document.getElementById(id);
+           if (elem.style.display === "none") {
+             elem.style.display = "block";
+           } else {
+             elem.style.display = "none";
+           }
+         }
+      </script>
+      <script>
+         window.MathJax = {
+           tex: {
+             inlineMath: [['$', '$'], ['\\(', '\\)']],
+             displayMath: [['$$', '$$'], ['\\[', '\\]']]
+           }
+         };
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+   </head>
+   <!-- TODO: background image. The original page had a full-page photo here, via an inline style on <body>
+        (style="background-image: url('...'); background-size: cover; background-position: center;
+        background-attachment: fixed; background-repeat: no-repeat;"). Add a RESI-appropriate image
+        with the same inline style, or leave the plain gray background. -->
+   <body class="bg-gray-100 text-gray-900">
+      <div class="max-w-4xl mx-auto p-6">
+         <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <!-- TODO: logo. Put the file next to index.html and uncomment:
+                 Logo first on mobile (order-1), second on desktop (md:order-2) -->
+            <!-- <img src="TODO-logo.svg" alt="Logo" class="h-12 w-auto mb-4 md:mb-0 md:ml-4 order-1 md:order-2 self-start md:self-auto" /> -->
+            <!-- Title second on mobile (order-2), first on desktop (md:order-1) -->
+            <h1 class="text-4xl font-bold text-left text-blue-700 order-2 md:order-1">
+               RESI Reading Group on AI Safety
+            </h1>
+         </div>
+         <p class="text-lg text-left mb-8">
+         <p>
+            Join us for the RESI reading group on AI safety organized by TODO: organizer names. For questions, feel free to contact <a href="mailto:TODO-contact-email">TODO: contact name</a>.
+         </p>
+         <br>
+         <p class="text-gray-500 mb-3">📍 Where: TODO: location</p>
+         <p class="text-gray-500 mb-3">📅 When: TODO: day and time</p>
+         <p class="text-gray-500 mb-3">📧 Mailing list: sign up <a href="TODO-mailing-list-url">here</a> (TODO: mailing list)</p>
+         </p>
+         <div class="grid gap-6">
+            <!-- To add a session: copy one of the cards below, fill in title / speaker (affiliation) / date,
+                 give the abstract a unique id (abstract-N) and use the same id in toggleAbstract('abstract-N').
+                 Slides go in static/YYYY-MM-DD/ and are linked with the (currently commented-out) Slides link. -->
+            <!-- <h2 class="text-2xl font-bold mt-10 text-blue-700">Upcoming Talks</h2> -->
+            <h2 class="text-2xl font-bold mt-10 text-blue-700">TODO: Term (e.g. Fall 2026)</h2>
+
+            <!-- PLACEHOLDER session 1: replace with real details -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+               <h3 class="text-xl font-semibold mb-1">TBD — Paper title</h3>
+               <p class="text-md text-gray-700 mb-1">TBD — Speaker (Affiliation)</p>
+               <p class="text-sm text-gray-500 mb-2">TBD — Date</p>
+               <div class="flex items-center space-x-4">
+                  <button class="text-blue-600 underline text-sm mb-2" onclick="toggleAbstract('abstract-3')">
+                  Abstract
+                  </button>
+                  <!-- <a class="text-blue-600 underline text-sm mb-2 no-dotted" href="static/YYYY-MM-DD/slides.pdf">Slides</a> -->
+               </div>
+               <p id="abstract-3" class="text-sm text-gray-800 hidden" style="display:none;">
+                  TBD — Abstract.
+               </p>
+            </div>
+
+            <!-- PLACEHOLDER session 2: replace with real details -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+               <h3 class="text-xl font-semibold mb-1">TBD — Paper title</h3>
+               <p class="text-md text-gray-700 mb-1">TBD — Speaker (Affiliation)</p>
+               <p class="text-sm text-gray-500 mb-2">TBD — Date</p>
+               <div class="flex items-center space-x-4">
+                  <button class="text-blue-600 underline text-sm mb-2" onclick="toggleAbstract('abstract-2')">
+                  Abstract
+                  </button>
+                  <!-- <a class="text-blue-600 underline text-sm mb-2 no-dotted" href="static/YYYY-MM-DD/slides.pdf">Slides</a> -->
+               </div>
+               <p id="abstract-2" class="text-sm text-gray-800 hidden" style="display:none;">
+                  TBD — Abstract.
+               </p>
+            </div>
+
+            <!-- PLACEHOLDER session 3: replace with real details -->
+            <div class="bg-white p-6 rounded-xl shadow-md">
+               <h3 class="text-xl font-semibold mb-1">TBD — Paper title</h3>
+               <p class="text-md text-gray-700 mb-1">TBD — Speaker (Affiliation)</p>
+               <p class="text-sm text-gray-500 mb-2">TBD — Date</p>
+               <div class="flex items-center space-x-4">
+                  <button class="text-blue-600 underline text-sm mb-2" onclick="toggleAbstract('abstract-1')">
+                  Abstract
+                  </button>
+                  <!-- <a class="text-blue-600 underline text-sm mb-2 no-dotted" href="static/YYYY-MM-DD/slides.pdf">Slides</a> -->
+               </div>
+               <p id="abstract-1" class="text-sm text-gray-800 hidden" style="display:none;">
+                  TBD — Abstract.
+               </p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
