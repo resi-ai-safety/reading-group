@@ -62,15 +62,17 @@
                RESI Reading Group on AI Safety
             </h1>
          </div>
-         <p class="text-lg text-left mb-8">
-         <p>
+         <div class="text-lg text-left mb-8">
+         <p class="mb-4">
             Join us for the RESI reading group on AI safety organized by Miranda Christ, Tal Herman, and Jonathan Shafer. For questions, feel free to contact <a href="mailto:shaferjo@mit.edu">Jonathan</a>.
          </p>
+         <p class="mb-4">The RESI reading group is a weekly forum, meant as a platform for open discussion. Each week a set of reading materials and guiding questions will serve as a basis for conversation, and all participants are encouraged to read and take part. The topics will touch on AI safety in the broad sense: from historical approaches, to modern debates and ideas. Sessions will encompass both technical and non-technical works, and no particular background is required.</p>
+         <p class="mb-4">On top of being an open space for discussing AI safety, the reading group will also serve as a door to the RESI community, and will accept visitors and guests who are interested to take part in the conversation and get to know the organization. A number of spots are available for outside guests each session. If you are currently not a RESI member and wish to participate in the meeting, please fill the application form below.</p>
          <br>
          <p class="text-gray-500 mb-3">📍 Where: RESI Offices</p>
          <p class="text-gray-500 mb-3">📅 When: Wednesdays at 11:00 am ET</p>
          <p class="text-gray-500 mb-3">📧 Mailing list: sign up via the <a href="https://forms.gle/CZeYq6bm1YGoGQE18">interest form</a></p>
-         </p>
+         </div>
          <div class="grid gap-6">
             <!-- To add a session: copy one of the cards below, fill in topic / discussion leader (affiliation) / date,
                  give the readings list a unique id (readings-N) and use the same id in toggleReadings('readings-N').
@@ -79,21 +81,51 @@
             <!-- <h2 class="text-2xl font-bold mt-10 text-blue-700">Upcoming Talks</h2> -->
             <h2 class="text-2xl font-bold mt-10 text-blue-700">Fall 2026</h2>
 
-            <!-- PLACEHOLDER session 1: replace with real details -->
             <div class="bg-white p-6 rounded-xl shadow-md">
-               <h3 class="text-xl font-semibold mb-1">TBD — Topic</h3>
-               <p class="text-md text-gray-700 mb-1">TBD — Discussion leader (Affiliation)</p>
+               <h3 class="text-xl font-semibold mb-1">The Emergence of Modern-Cryptography</h3>
+               <p class="text-md text-gray-700 mb-1">Discussion leader: Tal Herman</p>
                <p class="text-sm text-gray-500 mb-2">TBD — Date</p>
-               <div class="flex items-center space-x-4">
-                  <button class="text-blue-600 underline text-sm mb-2" onclick="toggleReadings('readings-3')">
-                  Readings
-                  </button>
-                  <!-- <a class="text-blue-600 underline text-sm mb-2 no-dotted" href="static/YYYY-MM-DD/slides.pdf">Slides</a> -->
+               <div class="space-y-4 text-gray-700">
+                  <p>In the spirit of RESI, facing the definitional crisis in AI safety, we take inspiration from the successful project of modern cryptography. We chose to devote the first reading group session to discuss the breakthroughs that established modern cryptography as we know it: public-key cryptography, semantic security, interactive proofs and zero knowledge. In this session we will explore the landscape prior to these revelations and try to understand how the new ideas came about, focusing on the definitional project rather than on the definitions themselves.</p>
+                  <section>
+                     <h4 class="font-semibold text-gray-900">Background</h4>
+                     <p>Modern cryptography took shape in the 1970s and 1980s through a combination of new constructions and new definitions. Public-key cryptography challenged the assumption that secure communication required a previously shared secret, while semantic security and zero knowledge gave precise meaning to what an adversary could learn. These developments shifted attention from designing schemes that resisted known attacks toward specifying security goals and proving guarantees under explicit computational assumptions. The definitions themselves provided foundations for an entire surge of results, ideas, and concepts revealing both unexpected possibilities and fundamental limitations.</p>
+                  </section>
+                  <section>
+                     <h4 class="font-semibold text-gray-900">While reading, consider these guiding questions</h4>
+                     <ul class="list-disc pl-5 space-y-1">
+                        <li>What problems motivated the definitions? How did the new definitions address them?</li>
+                        <li>One of the reasons the definitional activity of the early 80s was so successful is that the early definitions were not just good in their own right, but also offered a methodology for coming up with new definitions and new ideas. What are the key ideas, in your opinion, that allowed this surge?</li>
+                        <li>Given knowledge of modern crypto, how has the way we think and conceptualize the problems changed?</li>
+                        <li>What are the similarities and differences between the definitional crisis of AI nowadays and the definitional crisis of crypto in the 70s?</li>
+                     </ul>
+                  </section>
+                  <section>
+                     <h4 class="font-semibold text-gray-900">Reading guidelines</h4>
+                     <p>Read as much as you find interesting; we will also highlight certain paragraphs and discuss them during the session.</p>
+                  </section>
                </div>
-               <div id="readings-3" class="text-sm text-gray-800 hidden" style="display:none;">
-                  <ul class="list-disc pl-5 space-y-1">
-                     <li>TBD — Authors, <a href="#">Title</a>, Venue Year.</li>
-                  </ul>
+               <div id="readings-3" class="mt-4 text-sm text-gray-800">
+                  <section class="mb-4">
+                     <h4 class="font-semibold text-gray-900">Readings</h4>
+                     <ul class="list-disc pl-5 space-y-1">
+                        <li><a href="https://ieeexplore.ieee.org/document/4442">The First Ten Years of Public-Key Cryptography</a> — a retrospective account by Whitfield Diffie, one of the pioneers of modern cryptography.</li>
+                     </ul>
+                  </section>
+                  <section class="mb-4">
+                     <h4 class="font-semibold text-gray-900">Early cryptography</h4>
+                     <ul class="list-disc pl-5 space-y-1">
+                        <li><a href="https://www.wisdom.weizmann.ac.il/~oded/PDF/mcppp-v2.pdf">Modern Cryptography, Probabilistic, Proofs and Pseudorandomness</a> — read the Preface and Chapter 1.</li>
+                     </ul>
+                  </section>
+                  <section>
+                     <h4 class="font-semibold text-gray-900">Optional readings</h4>
+                     <ul class="list-disc pl-5 space-y-1">
+                        <li><a href="https://en.wikipedia.org/wiki/The_Codebreakers">Historical account of early and ancient cryptography</a> (The Codebreakers).</li>
+                        <li><a href="https://ee.stanford.edu/~hellman/publications/24.pdf">New Directions in Cryptography</a> (1976).</li>
+                        <li><a href="https://www.gutenberg.org/files/75074/75074-h/75074-h.htm">Elementary Cryptanalysis</a> (1939).</li>
+                     </ul>
+                  </section>
                </div>
             </div>
 
