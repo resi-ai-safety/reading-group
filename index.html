@@ -28,7 +28,7 @@
       <meta name="author" content="RESI">
       <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
       <script>
-         function toggleAbstract(id) {
+         function toggleReadings(id) {
            const elem = document.getElementById(id);
            if (elem.style.display === "none") {
              elem.style.display = "block";
@@ -73,7 +73,8 @@
          </p>
          <div class="grid gap-6">
             <!-- To add a session: copy one of the cards below, fill in topic / discussion leader (affiliation) / date,
-                 give the abstract a unique id (abstract-N) and use the same id in toggleAbstract('abstract-N').
+                 give the readings list a unique id (readings-N) and use the same id in toggleReadings('readings-N').
+                 Each reading is one <li>: authors, linked title, venue/year.
                  Slides go in static/YYYY-MM-DD/ and are linked with the (currently commented-out) Slides link. -->
             <!-- <h2 class="text-2xl font-bold mt-10 text-blue-700">Upcoming Talks</h2> -->
             <h2 class="text-2xl font-bold mt-10 text-blue-700">Fall 2026</h2>
@@ -84,14 +85,16 @@
                <p class="text-md text-gray-700 mb-1">TBD — Discussion leader (Affiliation)</p>
                <p class="text-sm text-gray-500 mb-2">TBD — Date</p>
                <div class="flex items-center space-x-4">
-                  <button class="text-blue-600 underline text-sm mb-2" onclick="toggleAbstract('abstract-3')">
-                  Abstract
+                  <button class="text-blue-600 underline text-sm mb-2" onclick="toggleReadings('readings-3')">
+                  Readings
                   </button>
                   <!-- <a class="text-blue-600 underline text-sm mb-2 no-dotted" href="static/YYYY-MM-DD/slides.pdf">Slides</a> -->
                </div>
-               <p id="abstract-3" class="text-sm text-gray-800 hidden" style="display:none;">
-                  TBD — Abstract.
-               </p>
+               <div id="readings-3" class="text-sm text-gray-800 hidden" style="display:none;">
+                  <ul class="list-disc pl-5 space-y-1">
+                     <li>TBD — Authors, <a href="#">Title</a>, Venue Year.</li>
+                  </ul>
+               </div>
             </div>
 
             <!-- PLACEHOLDER session 2: replace with real details -->
@@ -100,14 +103,16 @@
                <p class="text-md text-gray-700 mb-1">TBD — Discussion leader (Affiliation)</p>
                <p class="text-sm text-gray-500 mb-2">TBD — Date</p>
                <div class="flex items-center space-x-4">
-                  <button class="text-blue-600 underline text-sm mb-2" onclick="toggleAbstract('abstract-2')">
-                  Abstract
+                  <button class="text-blue-600 underline text-sm mb-2" onclick="toggleReadings('readings-2')">
+                  Readings
                   </button>
                   <!-- <a class="text-blue-600 underline text-sm mb-2 no-dotted" href="static/YYYY-MM-DD/slides.pdf">Slides</a> -->
                </div>
-               <p id="abstract-2" class="text-sm text-gray-800 hidden" style="display:none;">
-                  TBD — Abstract.
-               </p>
+               <div id="readings-2" class="text-sm text-gray-800 hidden" style="display:none;">
+                  <ul class="list-disc pl-5 space-y-1">
+                     <li>TBD — Authors, <a href="#">Title</a>, Venue Year.</li>
+                  </ul>
+               </div>
             </div>
 
             <!-- PLACEHOLDER session 3: replace with real details -->
@@ -116,14 +121,16 @@
                <p class="text-md text-gray-700 mb-1">TBD — Discussion leader (Affiliation)</p>
                <p class="text-sm text-gray-500 mb-2">TBD — Date</p>
                <div class="flex items-center space-x-4">
-                  <button class="text-blue-600 underline text-sm mb-2" onclick="toggleAbstract('abstract-1')">
-                  Abstract
+                  <button class="text-blue-600 underline text-sm mb-2" onclick="toggleReadings('readings-1')">
+                  Readings
                   </button>
                   <!-- <a class="text-blue-600 underline text-sm mb-2 no-dotted" href="static/YYYY-MM-DD/slides.pdf">Slides</a> -->
                </div>
-               <p id="abstract-1" class="text-sm text-gray-800 hidden" style="display:none;">
-                  TBD — Abstract.
-               </p>
+               <div id="readings-1" class="text-sm text-gray-800 hidden" style="display:none;">
+                  <ul class="list-disc pl-5 space-y-1">
+                     <li>TBD — Authors, <a href="#">Title</a>, Venue Year.</li>
+                  </ul>
+               </div>
             </div>
          </div>
       </div>
