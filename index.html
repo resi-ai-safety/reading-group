@@ -87,6 +87,13 @@
                <p class="text-sm text-gray-500 mb-2">October 7, 2026</p>
                <div class="space-y-4 text-gray-700">
                   <p>In the spirit of RESI, facing the definitional crisis in AI safety, we take inspiration from the successful project of modern cryptography. We chose to devote the first reading group session to discuss the breakthroughs that established modern cryptography as we know it: public-key cryptography, semantic security, interactive proofs and zero knowledge. In this session we will explore the landscape prior to these revelations and try to understand how the new ideas came about, focusing on the definitional project rather than on the definitions themselves.</p>
+               </div>
+               <div class="flex items-center space-x-4 mt-3">
+                  <button class="text-blue-600 underline text-sm mb-2" onclick="toggleReadings('details-3')">
+                  Details
+                  </button>
+               </div>
+               <div id="details-3" class="space-y-4 text-gray-700 hidden" style="display:none;">
                   <section>
                      <h4 class="font-semibold text-gray-900">Background</h4>
                      <p>Modern cryptography took shape in the 1970s and 1980s through a combination of new constructions and new definitions. Public-key cryptography challenged the assumption that secure communication required a previously shared secret, while semantic security and zero knowledge gave precise meaning to what an adversary could learn. These developments shifted attention from designing schemes that resisted known attacks toward specifying security goals and proving guarantees under explicit computational assumptions. The definitions themselves provided foundations for an entire surge of results, ideas, and concepts revealing both unexpected possibilities and fundamental limitations.</p>
@@ -104,9 +111,7 @@
                      <h4 class="font-semibold text-gray-900">Reading guidelines</h4>
                      <p>Read as much as you find interesting; we will also highlight certain paragraphs and discuss them during the session.</p>
                   </section>
-               </div>
-               <div id="readings-3" class="mt-4 text-sm text-gray-800">
-                  <section class="mb-4">
+                  <section>
                      <h4 class="font-semibold text-gray-900">Readings</h4>
                      <ul class="list-disc pl-5 space-y-1">
                         <li><a href="https://ieeexplore.ieee.org/document/4442">The First Ten Years of Public-Key Cryptography</a> — a retrospective account by Whitfield Diffie, one of the pioneers of modern cryptography.</li>
