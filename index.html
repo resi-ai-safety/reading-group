@@ -196,6 +196,49 @@
             </div>
 
             <div class="bg-white p-6 rounded-xl shadow-md">
+               <h3 class="text-xl font-semibold mb-1">Sandbagging: Capability Hiding and Capability Elicitation</h3>
+               <p class="text-md text-gray-700 mb-1">Discussion leaders: Anastasiia Struss and Miranda Christ</p>
+               <p class="text-sm text-gray-500 mb-2">November 4, 2026</p>
+               <div class="space-y-4 text-gray-700">
+                  <p>Sandbagging is strategic underperformance on an evaluation. A developer deliberately trains a model that appears less capable than it really is. For example, a model capable of solving difficult cybersecurity tasks might answer them incorrectly during evaluation but recover its full performance when given a secret password or deployed in a different environment. Sandbagging could therefore cause evaluators to underestimate a system’s risks and approve a model that requires stronger safeguards.</p>
+                  <p>We will read about empirical evidence of capability hiding and discuss an attempt to provide rigorous guarantees for capability hiding. Our goal is to identify the limitations of current definitions, constructions, and threat models.</p>
+               </div>
+               <div class="flex items-center space-x-4 mt-3">
+                  <button class="text-blue-600 underline text-sm mb-2" onclick="toggleReadings('details-9')">
+                  Details
+                  </button>
+               </div>
+               <div id="details-9" class="space-y-4 text-gray-700 hidden" style="display:none;">
+                  <section>
+                     <h4 class="font-semibold text-gray-900">While reading, consider these guiding questions</h4>
+                     <ul class="list-disc pl-5 space-y-1">
+                        <li>How should an AI system’s capabilities be defined?</li>
+                        <li>How do password-locked models differ from backdoored models?</li>
+                        <li>Is fine-tuning a reliable method for capability elicitation?</li>
+                        <li>What properties should a successfully password-locked version of a model satisfy? (Underperformance without the key, recovery of capabilities with the key, and indistinguishability from a genuinely weaker model?)</li>
+                        <li>What properties should a robust evaluator have? (Should it evaluate in a way that closely resembles real-world deployment so that the model cannot recognize it? Should it be able to elicit capability even when the model knows it is being evaluated?)</li>
+                        <li>How can the above properties be formalized mathematically?</li>
+                     </ul>
+                  </section>
+                  <section>
+                     <h4 class="font-semibold text-gray-900">Readings</h4>
+                     <ul class="list-disc pl-5 space-y-1">
+                        <li><a href="https://arxiv.org/pdf/2406.07358">AI Sandbagging: Language Models can Strategically Underperform on Evaluations</a></li>
+                        <li><a href="https://arxiv.org/pdf/2405.19550">Stress-Testing Capability Elicitation With Password-Locked Models</a></li>
+                        <li><a href="https://arxiv.org/pdf/2610.13928">AI Models Can Provably Hide Arbitrary Capabilities</a></li>
+                     </ul>
+                  </section>
+                  <section>
+                     <h4 class="font-semibold text-gray-900">Optional readings</h4>
+                     <ul class="list-disc pl-5 space-y-1">
+                        <li><a href="https://arxiv.org/pdf/2106.04690">Handcrafted Backdoors in Deep Neural Networks</a></li>
+                        <li><a href="https://arxiv.org/abs/2204.06974">Planting Undetectable Backdoors in Machine Learning Models</a></li>
+                     </ul>
+                  </section>
+               </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md">
                <h3 class="text-xl font-semibold mb-1">Existential Risk I</h3>
                <p class="text-md text-gray-700 mb-1">Discussion leader: Jonathan Shafer</p>
                <p class="text-sm text-gray-500 mb-2">November 11, 2026</p>
